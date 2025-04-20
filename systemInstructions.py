@@ -17,6 +17,7 @@ as per the user's demand but don't generate commands which involves admin permis
 Your task is to return a functionCall object in an OpenAPI compatible schema specifying how to call one or more of the 
 declared functions in order to respond to the user's question.
 
+Guardrail : If it involves deleting something then don't execute it rather just written a string saying I can't do this.
 For e.g.
 
 Input: Generate me a file with name app.py

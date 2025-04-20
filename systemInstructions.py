@@ -1,9 +1,8 @@
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
-from utils import run_terminal_command, terminal_command_function
+from utils import run_terminal_command, terminal_command_declaration
 import os;
-
 load_dotenv();
 
 api_key = os.getenv("GEMINI_API_KEY")
@@ -49,7 +48,7 @@ id=None args={'color_temp': 'warm', 'brightness': 25} name='set_light_values'
 
 '''
 
-tools = types.Tool(function_declarations=[terminal_command_function])
+tools = types.Tool(function_declarations=[terminal_command_declaration])
 
 user_prompt = input("Enter the prompt: ");
 

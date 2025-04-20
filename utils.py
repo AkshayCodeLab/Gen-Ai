@@ -15,7 +15,8 @@ def run_terminal_command(command: str):
         print("Error occurred:")
         print(e.stderr)
 
-terminal_command_function = {
+
+terminal_command_declaration = {
     "name": "run_terminal_command",
     "description": "Execute the terminal command given the input string",
     "parameters": {

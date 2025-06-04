@@ -1,0 +1,44 @@
+# Ignore all virtual environments recursively
+**/venv/
+**/.venv/
+**/env/
+**/ENV/
+**/env.bak/
+
+# Ignore Python bytecode
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+
+# Ignore build artifacts
+**/build/
+**/dist/
+**/*.egg-info/
+**/.eggs/
+
+# Ignore .env files in any subproject
+**/.env
+**/.env.*
+
+# Ignore IDE/editor folders recursively
+**/.vscode/
+**/.idea/
+
+# Ignore testing and coverage folders
+**/.pytest_cache/
+**/.mypy_cache/
+**/.coverage
+**/htmlcov/
+**/.hypothesis/
+
+# Ignore Jupyter notebook checkpoints
+**/.ipynb_checkpoints/
+
+# macOS and editor temp files
+**/.DS_Store
+**/*~
+**/*.swp
+
+# Optional: logs, results, etc
+**/*.log
+**/tests/results/
